@@ -1,1 +1,1 @@
-## BrainSynth
+## GitHub Page for BrainSynth
