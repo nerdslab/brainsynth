@@ -1,1 +1,3 @@
-## GitHub Page for BrainSynth
+## BrainSynth !
+
+!! ~~ synthesizing images of brains ~~ !!
