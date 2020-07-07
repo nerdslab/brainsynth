@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>BrainSynth</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/menu.js"></script>
+    <style>
+        .menu-index {
+            color: rgb(255, 255, 255) !important;
+            opacity: 1 !important;
+            font-weight: 700 !important;
+        }
+    </style>
+</head>
+
+<!--
+<style>
+    img{
+        max-width: 100%;
+        max-height: 100%;
+        display: block; /* remove extra space below image */
+    }
+    .box{
+        width: 500px;
+    }
+    .box.large{
+        height: auto;
+    }
+</style>
+-->
+
+<body>
+<div class="menu-container"></div>
+<div class="content-container">
+    <div class="content">
+        <div class="content-table flex-column">
+
+            <!--Start Intro-->
+            <div class="flex-row">
+                <div class="flex-item flex-column">
+                    <h2 class="add-top-margin">Welcome to BrainSynth! Our preprint can be found <a target="_blank" href="https://www.biorxiv.org/content/10.1101/2020.06.04.134635v1.abstract">here</a>.</h2>
+                    <p class="text add-top-margin">
+                        Understanding how neural structure varies across individuals is critical for characterizing
+                        the effects of disease, learning, and aging on the brain. In our work BrainSynth, we introduce
+                        a deep generative modeling approach to find different modes of variation across many individuals.
+                    </p>
+                    <p class="text add-top-margin">
+                        Our results demonstrate that through coupling generative modeling frameworks with structured
+                        perturbations, it is possible to probe the latent space to provide insights into the
+                        representations of brain structure formed in deep neural networks.
+                    </p>
+                </div>
+            </div>
+            <div class="flex-row">
+                <div class="flex-item flex-column">
+                    <!--
+                    <a class="image adaptive-image" style="background-image: url('img/Fig1_overview.png'); width: 100%; max-width: 600px; min-height: 400px;" href="img/Fig1_overview.png" target="_blank"></a>
+                    <img class="text-wrap" src="img/Fig1_overview.png">
+                    -->
+                    <h2 class="add-top-margin">Methods</h2>
+                    <hr>
+                    <a class="image center adaptive-image" style="background-image: url('img/Fig1_overview.png'); width: 100%; max-width: 600px; min-height: 400px;" href="img/Fig1_overview.png" target="_blank"></a>
+                    <p class="text text-center graph-title">
+                        Overview image of our bi-directional technique (click to view full-size image).
+                    </p>
+                    <p class="text">
+                        <!--<img class="image image-wrap-text max-width-550" src="img/Fig1_overview.png">-->
+                        We trained a variational autoencoder (VAE) on a collection of
+                        <a target="_blank" href="https://connectivity.brain-map.org/">auto-fluorescence images</a>
+                        from over 1,700 mouse brains at 25 micron resolution. To then tap into the learned factors and
+                        validate the model's expressiveness, we developed a novel bi-directional technique to interpret
+                        the latent space--by making structured perturbations to both, the high-dimensional inputs of
+                        the network, as well as the low-dimensional latent variables in its bottleneck.
+                    </p>
+
+                </div>
+            </div>
+            <!--End Intro-->
+
+            <!--Start Text Only-->
+            <div class="flex-row">
+                <div class="flex-item flex-column">
+                    <!--
+                    <h2 class="add-top-margin">Team</h2>
+                    <hr>
+                    <p class="text">
+                        Our paper use a beta-VAE and a bi-directional technique to model brain variablity.
+                    </p>
+                    <p class="text">
+                        Methods including ...
+                    </p>
+                    -->
+                    <h2 class="add-top-margin">Team</h2>
+                    <hr>
+                    <ol class="publication">
+                        <li>
+                            <p class="text-small-margin">
+                                Ran Liu (<a target="_blank" href="https://rockyyyyyygt.github.io/">RanL</a>),
+                                Cem Subakan,
+                                Aishwarya H. Balwani (<a target="_blank" href="https://aishwaryahb.github.io/">AishwaryaHB</a>),
+                                Jennifer Whitesell,
+                                <br>
+                                Julie Harris,
+                                Sanmi Koyejo,
+                                Eva Dyer (<a target="_blank" href="https://github.com/evadyer">evadyer</a>).
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!--End Text Only-->
+
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
